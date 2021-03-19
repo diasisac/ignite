@@ -10,5 +10,12 @@ export function CreateCourse(request:Request, response:Response){
         }
     );
 
+    CreateCourseService.execute(
+        {
+            name:"ReactJS",
+            educator:"Hyuri",
+        }
+    );
+
     return response.send();
 }
