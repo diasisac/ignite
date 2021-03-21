@@ -46,7 +46,7 @@
             },
             "get":{
                 "tags":["Category"],
-                "sumamary":"List all categories",
+                "summary":"List all categories",
                 "description":"List all categories",
                 "responses":{
                     "200":{
