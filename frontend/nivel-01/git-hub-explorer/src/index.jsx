@@ -1,5 +1,3 @@
-import React from 'react';
-
-function App(){
-    return <h1>Hello Word!</h1>
-}
+import {render} from 'react-dom';
+import { App } from './App';
+render(<App/>, document.getElementById('root'));
