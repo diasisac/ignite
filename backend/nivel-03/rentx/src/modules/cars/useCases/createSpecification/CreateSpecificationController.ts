@@ -4,10 +4,11 @@ import {container} from "tsyringe";
 import { CreateCategoryUseCase } from '../createCategory/CreateCategoryUseCase';
 class CreateSpecificationController{
 
-    handle(request: Request, response: Response):Response{
+    async handle(request: Request, response: Response):Promise <Response>{
     const {name, description} = request.body;
-    const createSpecificationUseCase = container.resolve(CreateCategoryUseCase)
-    createSpecificationUseCase.execute({name, description});
+    const createSpecificationUseCase = container.resolve(CreateSpecificationUseCase)
+    
+    await createSpecificationUseCase.execute({name, description});
 
     return response.status(201).send();
     }
