@@ -18,6 +18,7 @@
     "react-dom": "17.0.2",
     "react-icons": "^4.2.0",
     "sass": "^1.32.8",
+    "stream": "^0.0.2",
     "stripe": "^8.141.0"
   },
   "devDependencies": {
