@@ -1,5 +1,5 @@
 import { Request, Response} from 'express';
-import { CreateCategoryUseCase } from './CreateCategoryUseCase';
+import { CreateCategoryUseCase } from '@modules/cars/useCases/createCategory/CreateCategoryUseCase';
 import { container } from "tsyringe";
 
 class CreateCategoryController {
