@@ -4,15 +4,15 @@ import "express-async-errors";
 
 import swaggerUi from 'swagger-ui-express';
 
-import swaggerFile from './swagger.json';
+import swaggerFile from '../../../swagger.json';
 
-import "./database";
+import "../typeorm";
 
-import "./shared/container";
+import "../../container";
 
 import { router } from './routes';
 
-import { AppError } from './errors/AppError';
+import { AppError } from '../../errors/AppError';
 
 const app = express();
 
